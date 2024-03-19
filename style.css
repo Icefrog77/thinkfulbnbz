@@ -1,0 +1,286 @@
+* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  max-width: 100%;
+  height: auto; 
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+  margin-bottom: 10px; 
+}
+
+nav {
+  display: flex;
+  align-items: center; 
+}
+
+#menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+#menu li {
+  margin-right: 20px;
+}
+
+#menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+#menu li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  /* flex:1; */
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px; 
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 25px;
+  width: 100%;
+}
+
+.formelement{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+
+@media all and (min-width: 768px) {
+  #about {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-details {
+    display: flex;
+    flex-direction: row; /* Keep images and paragraph in a row */
+    justify-content: space-between; /* Space them apart horizontally */
+    align-items: center; /* Vertically center the content */
+  }
+  
+  .image-container {
+    display: flex;
+    flex:1;
+    margin: 15px 10px 15px 0px; 
+  }
+  
+
+  .paragraph-container {
+    max-width: 50%; 
+    flex:1;
+    margin-left: 30px; 
+  }
+  .about-details img {
+    max-width: 50%;
+    margin: 10px; 
+    
+  }
+  header {
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  form {
+    flex-direction: row;  
+
+  }
+
+  form label,
+  form select,
+  form input {
+    margin-bottom: 0;
+    width: 90%
+  }
+
+  form button {
+    width: auto;
+
+  }
+
+  .formelement{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  } 
+
+
+  #about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #about img {
+    max-width: 50%;
+  }
+
+  #ideas {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ideas-details {
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .image-item1{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+  }
+  .image-item2{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+  }
+
+  .image-item {
+    
+    max-width: 700px; /* Adjust max-width as needed */
+    flex-direction: row;
+    text-align: center;
+    flex:1
+  }
+  
+  .image-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px; /* Optional: Add border-radius for rounded corners */
+  }
+
+  
+  #host {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+  }
+  
+  .texts {
+    flex: 1; /* Take up remaining space in the flex container */
+    align-items: center;
+    flex-direction:column;
+  }
+  
+  #host img {
+    max-width: 50%;
+    margin-left: 20px; /* Add space between the text and the image */
+  }
+}
